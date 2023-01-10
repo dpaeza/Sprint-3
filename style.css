@@ -1,0 +1,1272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    /* overflow-x: hidden; */
+    
+}
+
+body{
+    width: 100vw;
+}
+
+:root{
+    --azul: #2A41E8;
+    --blanco: #FFFFFF;
+    --gris: #4B4D4F;
+    --naranja: #FF5E14;
+    --black: #232628;
+    --grisClaro: #ECECEC;
+    --grisLetra: #9B9B9B;
+    --grisSearch: #646464;
+    --grisSections: #8C8C8C;
+    --negroTitulo: #111111;
+    --otroNegro:#000000;
+    --nefroFonfo: #292929;
+    --backgroundagents: #F3F3F3;
+}
+
+/* Encabezado */
+
+.headerBlue{
+    display: flex;
+    background-color: var(--azul);
+    color: var(--blanco);
+    width: 100vw;
+    height: 54px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerBlueOne{
+    display: flex;
+}
+
+.direction{
+    margin-left: 35px;
+    margin-right: 28px;
+    padding-left: 20px;
+}
+
+.number{
+    margin-right: 30px;
+}
+
+.buttonLogin{
+    background-color: var(--azul);
+    color: var(--blanco);
+    border: none;
+    margin-right: 28px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.buttonLogin:hover{
+    cursor: pointer;
+}
+
+.headerwhite{
+    display: flex;
+    width: 100vw;
+    height: 82px;
+    background-color: var(--blanco);
+    font-weight: 500;
+    color: var(--gris);
+    border: solid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.menu{
+    color: var(--gris);
+    transition: all 200ms ease;
+}
+.menu:hover {
+    color: var(--azul);
+    cursor: pointer;
+}
+
+.logo{
+    width: 35.95px;
+    height: 40.88px;
+    margin-left: 36px;
+}
+
+.casa{
+    font-weight: 400;
+}
+
+.namePage{
+    font-size: 28px;
+    margin: 0 33px 0 11.1px;
+}
+
+.buttonSubmit{
+    background-color: var(--naranja);
+    color: var(--blanco);
+    width: 200px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 400ms ease;
+    margin-left: 15px;
+}
+.buttonSubmit:hover{
+    cursor: pointer;
+    background: black;
+}
+
+/* header{
+    position: fixed;
+} */
+
+/* SECCION DE BUSQUEDA */
+.search {
+    height: 663px;
+    width: 100vw;
+    background-image: url(./hero-bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--blanco); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+.pp{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 54px;
+}
+
+.navSearch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--blanco);
+    width: 1280px;
+    height: 119px;
+    border-radius: 4px;
+}
+
+.all{
+    background-color: var(--grisClaro);
+    color: var(--grisLetra);
+    font-size: 14px;
+    padding: 16px;
+    gap: 5px;
+    height: 60px;
+    border-radius: 4px;
+}
+.type{
+    width: 274px;
+    display: list-item;
+    list-style: none;
+    gap: 25px;
+}
+
+.borderone{
+    border-radius: 0 0 4px 4px;
+}
+
+.atrib{
+    background-color: var(--blanco);
+    width: 274px;
+    padding-left: 16px;
+    translate: -16px;
+    padding-top: 25px;
+    font-size: 18px;
+    transition: all 200ms ease;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.magic{
+    display: none;
+}
+
+.atrib:hover{
+    color: #2A42E8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.status{
+    width: 188px;
+    display: list-item;
+    list-style: none;
+    gap: 25px;
+}
+.atribdos {
+    background-color: var(--blanco);
+    width: 188px;
+    padding-left: 16px;
+    translate: -16px;
+    padding-top: 25px;
+    font-size: 18px;
+    transition: all 200ms ease;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.atribdos:hover {
+    color: #2A42E8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.busqueda{
+    width: 456px;
+}
+.searchInputs{
+    border: none;
+    background-color: var(--grisClaro);
+    font-size: 16px;
+    color: var(--black);
+    border-radius: 6px;
+    /* padding: 0; */
+    
+}
+
+.change{
+    background-color: var(--blanco)
+}
+.changedos{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.busquedaButton{
+    width: 423px;
+    
+}
+
+.busqueda{
+    background-color: var(--grisClaro);
+    color: var(--grisSearch);
+    font-size: 14px;
+    height: 60px;
+    padding: 19px 59px 20px 21px;
+    border-radius: 4px;
+}
+
+.busquedaButton{
+    border: none;
+    background-color: var(--grisClaro);
+    font-size: 16px;
+}
+.findButton{
+    width: 214px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    transition: all 250ms ease;
+}
+.findButton:hover{
+    background-color: #2842CD;
+    cursor: pointer;
+}
+
+
+/* Sección de las tarjetas */
+.cardsContainer{
+    height: auto;
+    width: 90vw;
+    border: solid;
+    margin: 120px 5vw 181px 5vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--grisSections);
+    margin-bottom: 13px;
+    text-align: center;
+}
+h1{
+    font-weight: 400;
+    font-style: normal;
+    color: var(--negroTitulo);
+    font-size: 56px;
+}
+.featured{
+    font-weight: 500;
+}
+
+.divCards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 58px 0 68px 0;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 390px;
+    height: 519px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.backCardimg{
+    /* background-image: url(./chuttersnap-348307-unsplash-1-2.png); */
+    height: 278px;
+    width: 100%;
+    padding: 24px 26px 27px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divBCKimg{
+    display: flex;
+    gap: 8px;
+}
+.houseBKimg{
+    background-color: #2A42E8;
+    border-radius: 4px;
+    width: auto;
+    height: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px 10px 8px 10px;
+}
+.statusBKimg{
+    background: #FF5E15;
+    border-radius: 4px;
+    width: auto;
+    height: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px 10px 8px 10px;
+}
+.priceCard{
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 128px;
+    height: 30px;
+    color: #2A42E8;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px 16px 6px 16px;
+}
+.divHeart{
+    display: flex;
+    justify-content: space-between;
+}
+.fav{
+    height: 30px;
+    width: 30px;
+}
+.fav:hover{
+    background-color: var(--naranja);
+    cursor: pointer;
+}
+.favdos{
+    background-color: var(--naranja);
+}
+
+.heart{
+    height: 30px;
+    width: 30px;
+}
+
+.locationCard{
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    color: #848484;
+    margin: 20px 0 20px 42px;
+}
+.nameCard{
+    font-size: 20px;
+    color: #1D1D1D;
+    margin: 0 58px 23px 26px;
+    transition: all 200ms ease;
+}
+.nameCard:hover{
+    color: #2A42E8;
+    cursor: pointer;
+}
+.divdosCardP{
+    display: flex;
+    gap: 6px;
+}
+.agencyNameCard{
+    font-size: 14px;
+    color: #2A41E8;
+}
+.imgOwner{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+.timeCard{
+    font-size: 14px;
+    color: #848484;
+}
+.divnamesCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px 0 25px;
+}
+.barrita{
+    margin: 22px 25px 16px 25px;
+}
+.areaCardmini{
+    display: flex;
+    gap: 7px;
+}
+.areaLetterCard{
+    font-weight: 500;
+    font-size: 16px;
+    color: #111111;
+}
+.divminimini{
+    display: flex;
+    gap: 7px;
+}
+.ultdiv{
+    display: flex;
+    gap: 22px;
+}
+.divfooterCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px 0 26px;
+}
+.propertiesButton{
+    background-color: var(--otroNegro);
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 500;
+    width: 268px;
+    height: 58px;
+    border-radius: 29px;
+    border: none;
+    letter-spacing: 2px;
+    justify-self: last baseline;
+    transition: all 250ms ease;
+}
+ .propertiesButton:hover {
+    background-color: #2A42E8;
+    cursor: pointer;
+}
+
+
+/* Hot Deal Section */
+.hotDealContainer{
+    height: 782px;
+    width: 90vw;
+    border: solid;
+    margin: 0px 5vw 181px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apartmentsType{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.division{
+    width: 50%;
+    height: 100%;
+    background-image: url(./isaac-benhesed-249429-unsplash-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.photosButton{
+    background-color: var(--blanco);
+    color: var(--azul);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    margin: 500px 11%;
+    transition: all 250ms ease;
+}
+.photosButton:hover {
+    background-color: #2A42E8;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.apartmentsType2{
+    background-color: var(--nefroFonfo);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.p4{
+    color: var(--grisLetra);
+    font-weight: 400;
+    font-size: 18px;
+}
+h4{
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 36px;
+    transition: all 200ms ease;
+}
+h4:hover:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.price{
+    background-color: var(--naranja);
+    color: var(--blanco);
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 11px 0;
+}
+.images2{
+   display: flex;
+   gap: 40px;
+}
+
+
+/* Properties by area section */
+.propertiesByAreaContainer{
+    height: 934px;
+    width: 90vw;
+    /* border: solid; */
+    margin: 0px 5vw 120px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cityImg{
+    display: flex;
+    flex-wrap: wrap;
+    height: 750px;
+    width: 100%;
+    /* border: solid; */
+}
+.imgLA{
+    background-image: url(./los-angeles-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    min-width: 32%;
+    margin-right: 2.4%;
+    border-radius: 6px;
+    transition: all 700ms ease;
+    filter: sepia(30%);
+}
+.imgLA:hover{
+    cursor: pointer;
+    scale: 105%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.imgSF{
+    background-image: url(./joseph-barrientos-49318-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    min-width: 65.6%;
+    border-radius: 6px;
+    filter: sepia(30%);
+    transition: all 700ms ease;
+}
+.imgSF:hover {
+    cursor: pointer;
+    scale: 105%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.imgSeattle{
+    background-image: url(./ben-dutton-1339856-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    min-width: 65.6%;
+    margin-top: 2%;
+    border-radius: 6px;
+    filter: sepia(30%);
+    transition: all 700ms ease;
+}
+.imgSeattle:hover {
+    cursor: pointer;
+    scale: 105%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.imgSD{
+    background-image: url(./tyrel-johnson-735248-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    min-width: 32%;
+    margin-left: 2.4%;
+    margin-top: 2%;
+    border-radius: 6px;
+    filter: sepia(30%);
+    transition: all 700ms ease;
+}
+.imgSD:hover {
+    cursor: pointer;
+    scale: 105%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+h5{
+    font-weight: 500;
+    color: var(--blanco);
+    letter-spacing: 3px;
+    font-size: 32px;
+    margin-top: 280px;
+    margin-left: 31px;
+    margin-bottom: 2px;
+}
+
+.numberP{
+ font-size: 18px;
+ color: var(--blanco);
+ margin-left: 55px;
+}
+
+/* Agent Section */
+.agentsContainer {
+    height: 1050px;
+    width: 100vw;
+    background-color: var(--backgroundagents);
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+.tittleAgents{
+    margin-top: 92px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agentCards{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+.agentCard{
+    width: 400px;
+    height: 600px;
+    background-color: var(--blanco);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.agentCard:hover {
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+}
+.imgAgent{
+    padding: 30px;
+}
+.AgentP{
+    border-radius: 4px;
+}
+.agentL{
+    margin-left: 28px;
+    color: #999999;
+    font-size: 18px;
+    transition: all 200ms ease;
+}
+.agentL:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.nameAgent{
+    color: #111111;
+    font-size: 36px;
+    letter-spacing: 0.2px;
+    margin: 16px 0 29px 28px;
+    transition: all 200ms ease;
+}
+.nameAgent:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.gapA{
+    margin-top: 8px;
+}
+.tresuttons{
+    margin-top: 86px;
+    width: 93px;
+    height: 20px;
+    align-self: center;
+}
+
+/* Want to Sell Property? Section */
+.sellProperty{
+    height: 870px;
+    width: 100vw;
+    background-image: url(./hero-bg-image.png);
+    border: solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.miniContainer{
+    height: 496px;
+    width: 734px;
+    background-color: #2842CD;
+    margin: 187px 0px 0 50px;
+    padding: 90px 124px 90px 76px;
+    border-radius: 6px;
+}
+.want{
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 35px;
+    width: 338px;
+}
+.ppp{
+    font-size: 20px;
+    color: #C6CBEA;
+    margin-bottom: 42px;
+}
+.moreDetailsButton{
+    background: #000000;
+    border-radius: 29px;
+    height: 58px;
+    width: 270px;;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    border: none;
+    text-align: left;
+    padding-left: 36px;
+    transition: all 300ms ease;
+}
+.moreDetailsButton:hover {
+    background-color: #FF5E15;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Real State Agencies Section */
+.agenciesContainer {
+    height: 1042px;
+    width: 100vw;
+    background-color: #FAFAFA;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+.agentCards {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.agencieCard{
+    width: 400px;
+    height: 534px;
+    background-color: var(--blanco);
+    border-radius: 6px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 500ms ease;
+}
+.agencieCard:hover {
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+.vericontent {
+    display: flex;
+}
+.veri{
+    display: flex;
+    gap: 228px;
+}
+.verified{
+    margin-left: 10px;
+}
+.divflag{
+    display: flex;
+}
+.gapi{
+    margin-left: 11px;
+}
+.propertiesButtonAgency{
+    background-color: #EAEDFD;
+    color: #2A41E8;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    width: 126px;
+    height: 44px;
+    margin-top: 35px;
+    transition: all 250ms ease;
+}
+.propertiesButtonAgency:hover {
+    background-color: #2A42E8;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.agencyL{
+    color: #999999;
+    font-size: 18px;
+    transition: all 200ms ease;
+}
+.agencyL:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.nameA{
+    color: #111111;
+    font-size: 36px;
+    letter-spacing: 0.2px;
+    margin: 16px 0 29px 0px;
+    transition: all 200ms ease;
+}
+.nameA:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.aja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgAgency{
+    height: 170px;
+}
+
+/* Articles & Tips Section */
+.articlesyTipsContainer{
+    height: 1160px;
+    width: 100vw;
+    background-color: #F3F3F3;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+.tittleArticles{
+    margin-top: 121px;
+    margin-bottom: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardsArticlesContainer{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin-bottom: 145px;
+}
+.cardArticle{
+    width: 400px;
+    height: 514px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    transition: all 400ms ease;
+}
+.cardArticle:hover {
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.2);
+}
+.imgArticle{
+    width: 100%;
+    height: 266px;
+}
+.cardArticleDown{
+    padding: 30px;
+}
+.category{
+    width: 81px;
+    height: 23px;
+    background-color: #2A42E8;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px 0;
+    transition: all 250ms ease;
+}
+.category:hover{
+    background-color: #111111;
+    cursor: pointer;
+}
+.articleBig{
+    color: #111111;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 16px 0 58px 0;
+    transition: all 200ms ease;
+}
+.articleBig:hover{
+    color: #2A42E8;
+    cursor: pointer;
+}
+.divArticleText{
+    display: flex;
+    margin-top: 30px;
+}
+.fecha{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #111111;
+    margin-left: 7px;
+    transition: all 200ms ease;
+}
+.fecha:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.articleBigDOS{
+    color: #111111;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 16px 0 25px 0;
+    transition: all 200ms ease;
+}
+.articleBigDOS:hover {
+    color: #2A42E8;
+    cursor: pointer;
+}
+.moreArticlesTipsButton{
+    height: 58px;
+    width: 324px;
+    background-color: #000000;
+    border-radius: 29px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    display: flex;
+    align-self: center;
+    padding: 18px 11px 19px 44px;
+    transition: all 250ms ease;
+}   
+.moreArticlesTipsButton:hover {
+    background-color: #2A42E8;
+    cursor: pointer;
+}
+
+/* Our Values Section */
+.valuesContainer{
+    height: 861px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.tittleValues{
+    margin-top: 121px;
+    margin-bottom: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.valuesCardsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin-bottom: 63px;
+}
+.valuesCard{
+    padding: 34px 53px 34px 42px;
+    width: 400px;
+    height: 314px;
+    border-radius: 6px;
+    transition: all 400ms ease;
+}
+.valuesCard:hover{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%);
+}
+.ot{
+    margin-top: 69px;
+    font-size: 28px;
+    color: #111111;
+}
+.op{
+    margin-top: 31px;
+    color: #999999;
+    font-size: 16px;
+}
+.readMoreButton{
+    width: 203px;
+    height: 58px;
+    border-radius: 29px;
+    border: none;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    display: flex;
+    align-self: center;
+    padding: 18px 11px 19px 44px;
+    transition: all 250ms ease;
+}
+.readMoreButton:hover{
+    background-color: #2A42E8;
+    cursor: pointer;
+}
+
+/* What Our Clients Say */
+.wOCS{
+    width: 100vw;
+    height: 844px;
+    background-image: url(./testimonials-bg-1.jpg);
+    border: solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 158px 242px 0 242px;
+}
+.cr{
+    color: #F4F4F4;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.wocsdos{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 56px;
+    margin: 12px 0 108px 0;
+}
+.pwocs{
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #F4F4F4;
+    margin-bottom: 59px;
+}
+.divwocs{
+    display: flex;
+}
+.circleimg{
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.ap{
+    font-weight: 500;
+    font-size: 24px;
+    color: #F4F4F4;
+    letter-spacing: 0.8px;
+}
+.sf{
+    color: #AFAFAF;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.va{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Footer */
+footer{
+    width: 100vw;
+    height: 701px;
+    border: solid;
+    background-color: #151515;
+    padding: 37px 100px 63px 50px;
+}
+.divFooteruno{
+    display: flex;
+    align-items: center;
+}
+.logoFooter{
+    width: 35.95px;
+    height: 40.88px;
+}
+.casaFooter{
+    font-weight: 300;
+    font-size: 28px;
+    color: white;
+}
+.royalFooter{
+    font-weight: 500;
+}
+.divFooterdos{
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+    align-items: flex-start;
+    gap: 30px;
+}
+.TF{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.14286px;
+    margin-bottom: 49px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.listFooter{
+    font-size: 16px;
+    letter-spacing: 1.14286px;
+    color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    gap: 22px;
+    width: auto;
+}
+.liFooter:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.ns{
+    font-size: 16px;
+    letter-spacing: 1.14286px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 374px;
+}
+.nsdos{
+    margin-left: 28px;
+    margin-top: 20px;
+    width: 246px;
+}
+.divFootertres{
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    width: auto;
+    margin-top: 170px;
+}
+
+
+
+.findButtonPage{
+    display: none;
+}
+.findButtonPagedos{
+    padding: 30px;
+}
+
+/* CARD DETAIL PAGE */
+.cardDetails{
+    background-color: #F3F3F3;
+}
+.cardDetailsDivUno{
+    display: flex;
+    height: 500px;
+    border: solid;
+    width: 100vw;
+}
+.imgCardDetailS{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: solid;
+}
+.pcinco{
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 36px;
+}
+.cardDetailsDivDos{
+    display: flex;
+    height: auto;
+    border: solid;
+    width: 100vw;
+    margin-top: 20px;
+}
+.divdodos{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #F3F3F3;
+}
+.divdotres {
+    width: 50%;
+    background-color: white;
+    padding: 15px;
+    color: var(--grisLetra);
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+.pseis{
+    color: var(--negroTitulo);
+    font-weight: 500;
+    font-size: 36px;
+}
+.money{
+    color: var(--azul);
+    font-size: 18px;
+}
+.scale{
+    width: 40px;
+}
+.dos{
+    font-weight: 500;
+    font-size: 30px;
+    color: #111111;
+}
+.divminiminiDos{
+    display: flex;
+    gap: 10px;
+}
+.ultdivDos{
+    display: flex;
+    gap: 40px;
+}
+.divult{
+    display: flex;
+    flex-direction: column;
+}
+.imdDCM{
+    width: 100vw;
+}
+.uscc{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-self: center;
+}
