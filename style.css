@@ -71,12 +71,16 @@ body{
 .headerwhite{
     display: flex;
     width: 100vw;
-    height: 82px;
+    /* height: 82px; */
+    min-height: 82px;
+    height: auto;
     background-color: var(--blanco);
     font-weight: 500;
     color: var(--gris);
-    border: solid;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.responsive{
     flex-wrap: wrap;
 }
 
@@ -136,7 +140,9 @@ ul{
 
 /* SECCION DE BUSQUEDA */
 .search {
-    height: 663px;
+    /* height: 663px; */
+    min-height: 663px;
+    height: auto;
     width: 100vw;
     background-image: url(./hero-bg-image.png);
     background-size: cover;
@@ -146,6 +152,8 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0 4% 0 4%;
 }
 
 h2{
@@ -164,9 +172,17 @@ h2{
     justify-content: space-around;
     align-items: center;
     background-color: var(--blanco);
-    width: 1280px;
-    height: 119px;
+    /* width: 1280px; */
+    width: auto;
+    padding: 25px 20px 25px 20px;
+    gap: 20px;
+    /* height: 119px; */
+    min-height: 119px;
+    height: auto;
+    /* height: auto; */
+    /* padding: 29.5px 0 29.5px 0px; */
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 
 .all{
@@ -175,8 +191,9 @@ h2{
     font-size: 14px;
     padding: 16px;
     gap: 5px;
-    height: 60px;
+    /* height: 60px; */
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 .type{
     width: 274px;
@@ -290,7 +307,6 @@ h2{
 .cardsContainer{
     height: auto;
     width: 90vw;
-    border: solid;
     margin: 120px 5vw 181px 5vw;
     display: flex;
     flex-direction: column;
@@ -311,6 +327,7 @@ h1{
     font-style: normal;
     color: var(--negroTitulo);
     font-size: 56px;
+    text-align: center;
 }
 .featured{
     font-weight: 500;
@@ -488,9 +505,10 @@ h1{
 
 /* Hot Deal Section */
 .hotDealContainer{
-    height: 782px;
+    /* height: 782px; */
+    min-height: 782px;
     width: 90vw;
-    border: solid;
+    /* border: solid; */
     margin: 0px 5vw 181px 5vw;
     display: flex;
     flex-direction: column;
@@ -501,7 +519,10 @@ h1{
 .apartmentsType{
     display: flex;
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
+    min-height: 600px;
+    height: auto;
+    margin-top: 85px;
 }
 
 .division{
@@ -536,17 +557,21 @@ h1{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 0 20px 0 20px;
+    gap: 10px;
 }
 .p4{
     color: var(--grisLetra);
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
 }
 h4{
     color: var(--blanco);
     font-weight: 500;
     font-size: 36px;
     transition: all 200ms ease;
+    text-align: center;
 }
 h4:hover:hover {
     color: #2A42E8;
@@ -564,12 +589,14 @@ h4:hover:hover {
 .images2{
    display: flex;
    gap: 40px;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 
 /* Properties by area section */
 .propertiesByAreaContainer{
-    height: 934px;
+    min-height: 934px;
     width: 90vw;
     /* border: solid; */
     margin: 0px 5vw 120px 5vw;
@@ -577,13 +604,16 @@ h4:hover:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 180px;
 }
 
 .cityImg{
     display: flex;
     flex-wrap: wrap;
-    height: 750px;
+    /* height: 750px; */
+    height: auto;
     width: 100%;
+    margin-top: 89px;
     /* border: solid; */
 }
 .imgLA{
@@ -668,10 +698,11 @@ h5{
 
 /* Agent Section */
 .agentsContainer {
-    height: 1050px;
+    /* height: 1050px; */
+    min-height: 1050px;
     width: 100vw;
     background-color: var(--backgroundagents);
-    border: solid;
+    /* border: solid; */
     display: flex;
     flex-direction: column;
 }
@@ -686,6 +717,7 @@ h5{
     display: flex;
     justify-content: center;
     gap: 28px;
+    flex-wrap: wrap;
 }
 .agentCard{
     width: 400px;
@@ -733,6 +765,7 @@ h5{
     width: 93px;
     height: 20px;
     align-self: center;
+    margin-bottom: 70px;
 }
 
 /* Want to Sell Property? Section */
@@ -740,15 +773,17 @@ h5{
     height: 870px;
     width: 100vw;
     background-image: url(./hero-bg-image.png);
-    border: solid;
+    /* border: solid; */
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 187px 50px 0 50px;
 }
 .miniContainer{
     height: 496px;
-    width: 734px;
+    /* width: 734px; */
+    max-width: 734px;
     background-color: #2842CD;
-    margin: 187px 0px 0 50px;
+    /* margin: 187px 0px 0 50px; */
     padding: 90px 124px 90px 76px;
     border-radius: 6px;
 }
@@ -786,10 +821,11 @@ h5{
 
 /* Real State Agencies Section */
 .agenciesContainer {
-    height: 1042px;
+    /* height: 1042px; */
+    min-height: 1042px;
     width: 100vw;
     background-color: #FAFAFA;
-    border: solid;
+    /* border: solid; */
     display: flex;
     flex-direction: column;
 }
@@ -876,10 +912,11 @@ h5{
 
 /* Articles & Tips Section */
 .articlesyTipsContainer{
-    height: 1160px;
+    /* height: 1160px; */
+    min-height: 1160px;
     width: 100vw;
     background-color: #F3F3F3;
-    border: solid;
+    /* border: solid; */
     display: flex;
     flex-direction: column;
 }
@@ -895,6 +932,7 @@ h5{
     justify-content: center;
     gap: 27px;
     margin-bottom: 145px;
+    flex-wrap: wrap;
 }
 .cardArticle{
     width: 400px;
@@ -979,6 +1017,7 @@ h5{
     align-self: center;
     padding: 18px 11px 19px 44px;
     transition: all 250ms ease;
+    margin-bottom: 122px;
 }   
 .moreArticlesTipsButton:hover {
     background-color: #2A42E8;
@@ -987,10 +1026,11 @@ h5{
 
 /* Our Values Section */
 .valuesContainer{
-    height: 861px;
+    /* height: 861px; */
+    min-height: 861px;
     width: 100vw;
     background-color: #FFFFFF;
-    border: solid;
+    /* border: solid; */
     display: flex;
     flex-direction: column;
 }
@@ -1007,6 +1047,7 @@ h5{
     justify-content: center;
     gap: 27px;
     margin-bottom: 63px;
+    flex-wrap: wrap;
 }
 .valuesCard{
     padding: 34px 53px 34px 42px;
@@ -1043,6 +1084,7 @@ h5{
     align-self: center;
     padding: 18px 11px 19px 44px;
     transition: all 250ms ease;
+    margin-bottom: 118px;
 }
 .readMoreButton:hover{
     background-color: #2A42E8;
@@ -1052,12 +1094,14 @@ h5{
 /* What Our Clients Say */
 .wOCS{
     width: 100vw;
-    height: 844px;
+    /* height: 844px; */
+    min-height: 844px;
+    min-height: 844px;
     background-image: url(./testimonials-bg-1.jpg);
-    border: solid;
+    /* border: solid; */
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 158px 242px 0 242px;
+    padding: 158px 10% 0 15%;
 }
 .cr{
     color: #F4F4F4;
@@ -1106,8 +1150,9 @@ h5{
 /* Footer */
 footer{
     width: 100vw;
-    height: 701px;
-    border: solid;
+    /* height: 701px; */
+    min-height: 701px;
+    /* border: solid; */
     background-color: #151515;
     padding: 37px 100px 63px 50px;
 }
@@ -1133,6 +1178,7 @@ footer{
     margin-top: 130px;
     align-items: flex-start;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .TF{
     font-weight: 500;
@@ -1269,4 +1315,189 @@ footer{
     margin-top: 20px;
     margin-bottom: 40px;
     align-self: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1084px) {
+    .type {
+        width: 455px;
+    }
+    .status{
+        width: 214px;
+    }
+    
+}
+
+@media screen and (max-width: 964px) {
+    .imgLA{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2.4%;
+    }
+    .imgSF{
+        width: 100%;
+    }
+    .imgSeattle{
+        width: 100%;
+    }
+    .imgSD{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 793px) {
+    .status {
+        width: 455px;
+    }
+    .findButton {
+        width: 455px;
+    }
+    .navSearch{
+        width: 500px; 
+
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .apartmentsType{
+        flex-direction: column;
+    }
+    .division{
+        width: 100%;
+        height: 400px;
+    }
+    .apartmentsType2{
+        width: 100%;
+        height: 50%;
+        height: auto;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sellProperty{
+        height: auto;
+        
+                padding: 40px 60px 40px 40px;
+           
+    }
+    .miniContainer{
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+    .want {
+        font-size: 40px;
+        width: auto;
+    }
+    .moreDetailsButton {
+        width: auto;
+        text-align: center;
+        padding-left: 0px;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .navSearch{
+        width: auto;
+        flex-direction: column;
+    }
+    .all{
+        width: 300px;
+    }
+    .busquedaButton::placeholder{
+        width: 250px;
+        text-overflow: ellipsis;
+    }
+    input:placeholder-shown {
+        text-overflow: ellipsis;
+        width: 250px;
+    }
+    .busquedaButton {
+        width: 300px;
+    }
+    .busqueda {
+    width: 300px;
+    }
+    .findButton{
+        width: 300px;
+    }
+    .search{
+        padding: 0 5px 0 5px;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .status {
+        width: 455px;
+    }
+
+    .findButton {
+        width: 455px;
+    }
+
+    .navSearch {
+        width: 500px;
+
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    .navSearch {
+        width: 260;
+    }
+    .buttonLogin{
+        padding: 0;
+        text-overflow: ellipsis;
+    }
+    .agentCards {
+        gap: 0px;
+    }
+    .agencieCard {
+        width: 300px;
+    }
+    .cardArticle {
+        padding: 0;
+    }
+    .all {
+        width: 200px;
+    }
+    
+    .busquedaButton::placeholder {
+        width: 150px;
+        text-overflow: ellipsis;
+    }
+    
+    input:placeholder-shown {
+        text-overflow: ellipsis;
+        width: 150px;
+    }
+    
+    .busquedaButton {
+        width: 100px;
+    }
+    
+    .busqueda {
+        width: 200px;
+    }
+    
+    .findButton {
+     width: 200px;
+    }
+    
+    .search {
+        padding: 0 5px 0 5px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    
 }
